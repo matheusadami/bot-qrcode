@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  app:
+    container_name: app
+    command: sh -c "npm install && npm run start:dev"
+    image: node:18.16.1-alpine
+    environment:
+      - CLIENT_ID=<Your Client ID here>
+      - TOKEN=<Your Bot Token here>
+    volumes:
+      - ./:/usr/local/apps/qrcodebot
+    working_dir: /usr/local/apps/qrcodebot

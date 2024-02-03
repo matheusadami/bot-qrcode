@@ -1,0 +1,1 @@
+export const DEFAULT_QRCODE_FILE_EXTENSION = 'png';

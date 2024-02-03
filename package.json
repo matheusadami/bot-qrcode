@@ -1,0 +1,37 @@
+{
+  "name": "qrcode-bot",
+  "version": "1.0.0",
+  "description": "Discord Bot that generates QR codes",
+  "main": "src/app.ts",
+  "type": "module",
+  "scripts": {
+    "start:prod": "node dist/app.js",
+    "build:prod": "npx tsc",
+    "start:dev": "npx tsx watch src/app.ts",
+    "start:debug": "npx tsx watch --inspect src/app.ts",
+    "lint:fix": "eslint --fix ./src/**/*.ts",
+    "lint": "eslint ./src/**/*.ts"
+  },
+  "keywords": [
+    "dev",
+    "bot",
+    "node",
+    "discord"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1",
+    "qrcode": "^1.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "@types/qrcode": "^1.5.4",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "eslint": "^8.51.0",
+    "tsx": "^3.13.0",
+    "typescript": "^5.2.2"
+  }
+}
